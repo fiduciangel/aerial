@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5B4B6E" />
+      <stop offset="1" stop-color="#D98E6A" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#FAF6F1" />
+  <!-- two suspended silks meeting -->
+  <path d="M20 8 C 20 28, 30 34, 32 52 C 34 34, 44 28, 44 8"
+        fill="none" stroke="url(#g)" stroke-width="4" stroke-linecap="round" />
+  <circle cx="32" cy="22" r="4.5" fill="#D98E6A" />
+</svg>
