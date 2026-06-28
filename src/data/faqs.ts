@@ -28,7 +28,7 @@ export const faqs: Faq[] = [
     category: "Getting Started",
     question: "What should I wear?",
     answer:
-      "Fitted clothing that covers the backs of your knees and your armpits — these are the areas that press into the fabric. Think leggings and a snug t-shirt or tank with sleeves. Avoid shorts, zippers, buttons, and anything loose that could snag. We practise barefoot or in grippy socks.",
+      "Fitted clothing that covers the backs of your knees and your armpits — these are the areas that press into the fabric. Think leggings and a snug t-shirt or tank with sleeves. Avoid shorts, zippers, buttons, and anything loose that could snag. We practice barefoot or in grippy socks.",
   },
   {
     category: "Getting Started",
@@ -40,7 +40,7 @@ export const faqs: Faq[] = [
     category: "Getting Started",
     question: "What should I bring to my first class?",
     answer:
-      "Just yourself, a water bottle, and an open mind. We provide all hammocks and props. Arrive 15 minutes early so we can show you around, fit your hammock height, and answer any nervous questions. Remove jewellery and skip heavy lotions or oils on class day — they make the silks slippery.",
+      "Just yourself, a water bottle, and an open mind. We provide all hammocks and props. Arrive 15 minutes early so we can show you around, fit your hammock height, and answer any nervous questions. Remove jewelry and skip heavy lotions or oils on class day — they make the silks slippery.",
   },
   {
     category: "Classes & Levels",
@@ -74,7 +74,7 @@ export const faqs: Faq[] = [
   },
   {
     category: "Safety & Health",
-    question: "Can I practise while pregnant?",
+    question: "Can I practice while pregnant?",
     answer:
       "Many people enjoy gentle, mostly-upright aerial work during the second and third trimesters with their doctor's clearance, but full inversions are off the table. Please talk to us before booking so we can recommend the right class and modifications — Aerial Restore is usually the best fit.",
   },

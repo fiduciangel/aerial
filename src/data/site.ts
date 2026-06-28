@@ -52,7 +52,7 @@ export const navLinks: NavLink[] = [
 export const stats: Stat[] = [
   { value: "2,400+", label: "flyers lifted off" },
   { value: "12", label: "max per class" },
-  { value: "40+", label: "classes each week" },
+  { value: "28", label: "classes each week" },
   { value: "4.9★", label: "average studio rating" },
 ];
 

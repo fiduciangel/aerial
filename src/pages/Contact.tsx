@@ -80,7 +80,7 @@ export default function Contact() {
           </Reveal>
 
           {/* Stylised "map" */}
-          <Reveal className="relative h-52 overflow-hidden rounded-3xl bg-gradient-to-br from-sage-soft via-sage to-plum-light shadow-soft">
+          <Reveal className="relative h-52 overflow-hidden rounded-3xl bg-gradient-to-br from-sage via-plum to-plum-deep shadow-soft">
             <SilkRibbons className="absolute inset-0 h-full w-full" opacity={0.2} />
             <div className="bg-grain absolute inset-0 opacity-30" />
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white">
@@ -180,7 +180,7 @@ export default function Contact() {
 }
 
 const inputClass =
-  "w-full rounded-xl border border-plum/15 bg-linen/50 px-4 py-3 text-ink placeholder:text-ink-soft/60 transition-colors focus:border-plum focus:bg-white focus:outline-none";
+  "w-full rounded-xl border border-plum/15 bg-linen/50 px-4 py-3 text-ink placeholder:text-ink-soft/80 transition-colors focus:border-plum focus:bg-white focus:outline-none";
 
 function Field({
   label,

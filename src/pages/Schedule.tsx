@@ -9,14 +9,14 @@ import { useDocumentTitle } from "../hooks/useDocumentTitle";
 export default function Schedule() {
   useDocumentTitle(
     "Schedule",
-    "Our weekly aerial yoga timetable — over forty classes a week, from early risers to candlelit Friday restoratives."
+    "Our weekly aerial yoga timetable — nearly thirty classes a week, from early risers to candlelit Friday restoratives."
   );
   return (
     <>
       <PageHeader
         eyebrow="Weekly schedule"
         title={<>Pick your moment to <span className="text-gradient italic">leave the ground</span></>}
-        intro="Over forty classes a week, from 6:30am risers to candlelit Friday restoratives. Classes cap at 12 hammocks, so reserve a few days ahead."
+        intro="Nearly thirty classes a week, from 6:30am risers to candlelit Friday restoratives. Classes cap at 12 hammocks, so reserve a few days ahead."
       >
         <div className="flex flex-wrap gap-3">
           <LinkButton to="/contact" variant="primary" size="md">

@@ -13,6 +13,7 @@ import Journal from "./pages/Journal";
 import JournalPost from "./pages/JournalPost";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Legal from "./pages/Legal";
 import NotFound from "./pages/NotFound";
 
 export default function App() {
@@ -33,6 +34,8 @@ export default function App() {
           <Route path="/journal/:id" element={<JournalPost />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/privacy" element={<Legal kind="privacy" />} />
+          <Route path="/terms" element={<Legal kind="terms" />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>

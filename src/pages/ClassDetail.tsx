@@ -44,6 +44,8 @@ export default function ClassDetail() {
       <header className={`relative overflow-hidden bg-gradient-to-br ${cls.hue} pt-32 pb-20 sm:pt-36`}>
         <SilkRibbons className="absolute inset-0 h-full w-full" opacity={0.3} />
         <div className="bg-grain absolute inset-0 opacity-30" />
+        {/* Left-weighted scrim keeps text readable over any class hue. */}
+        <div className="absolute inset-0 bg-gradient-to-r from-plum-deep/85 via-plum-deep/45 to-transparent" />
         <AerialGlyph
           motif={motifFor[cls.id] ?? "silk"}
           className="absolute -right-10 top-10 hidden h-[26rem] w-[26rem] opacity-50 md:block"
@@ -51,7 +53,7 @@ export default function ClassDetail() {
         <div className="container-page relative">
           <Link
             to="/classes"
-            className="inline-flex items-center gap-2 text-sm font-medium text-plum-deep/80 transition-colors hover:text-plum-deep"
+            className="inline-flex items-center gap-2 text-sm font-medium text-linen/85 transition-colors hover:text-linen"
           >
             <ArrowLeft size={16} /> All classes
           </Link>
@@ -61,17 +63,17 @@ export default function ClassDetail() {
               {cls.focus}
             </span>
           </div>
-          <h1 className="mt-4 max-w-2xl font-display text-4xl text-plum-deep sm:text-5xl md:text-6xl">
+          <h1 className="mt-4 max-w-2xl font-display text-4xl text-linen sm:text-5xl md:text-6xl">
             {cls.name}
           </h1>
-          <p className="mt-4 max-w-xl text-lg italic text-plum-deep/80">
+          <p className="mt-4 max-w-xl text-lg italic text-linen/85">
             {cls.tagline}
           </p>
-          <div className="mt-7 flex flex-wrap items-center gap-5 text-sm font-medium text-plum-deep">
+          <div className="mt-7 flex flex-wrap items-center gap-5 text-sm font-medium text-linen">
             <span className="inline-flex items-center gap-2">
               <Clock size={18} /> {cls.durationMin} minutes
             </span>
-            <IntensityMeter value={cls.intensity} />
+            <IntensityMeter value={cls.intensity} tone="light" />
           </div>
         </div>
       </header>

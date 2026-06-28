@@ -57,7 +57,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     name: "Renée DuPont",
-    context: "Travelling for work, dropped in",
+    context: "Traveling for work, dropped in",
     quote:
       "I drop into studios all over the country and Levity is the gold standard. Immaculate equipment, genuinely warm front desk, and teaching that respects your body. I plan trips around their schedule now.",
     rating: 5,

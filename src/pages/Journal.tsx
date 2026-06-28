@@ -23,7 +23,7 @@ export default function Journal() {
       <section className="container-page py-12 sm:py-16">
         {/* Featured */}
         <Reveal className="mb-12">
-          <PostCard post={featured} />
+          <PostCard post={featured} featured />
         </Reveal>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

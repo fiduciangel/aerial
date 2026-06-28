@@ -31,7 +31,7 @@ export const posts: Post[] = [
     body: [
       {
         paragraphs: [
-          "If you've booked your first aerial class, you're probably feeling two things at once: excitement and a low hum of 'what have I done?' Good. That's exactly the right mix. After teaching hundreds of first-timers, I can tell you the gap between how scary it feels and how it actually goes is enormous — and almost always in your favour.",
+          "If you've booked your first aerial class, you're probably feeling two things at once: excitement and a low hum of 'what have I done?' Good. That's exactly the right mix. After teaching hundreds of first-timers, I can tell you the gap between how scary it feels and how it actually goes is enormous — and almost always in your favor.",
           "Here's the honest, unglamorous truth about what your first hour in the silks is really like.",
         ],
       },
@@ -94,13 +94,13 @@ export const posts: Post[] = [
       {
         heading: "The zipper rule",
         paragraphs: [
-          "No zippers, buttons, hooks, belts, or anything sharp. They snag the silk (which is expensive) and dig into you (which is unpleasant). The same goes for jewellery — rings and watches can catch on the fabric, so leave them in your bag.",
+          "No zippers, buttons, hooks, belts, or anything sharp. They snag the silk (which is expensive) and dig into you (which is unpleasant). The same goes for jewelry — rings and watches can catch on the fabric, so leave them in your bag.",
         ],
       },
       {
         heading: "A few finishing touches",
         paragraphs: [
-          "Skip heavy lotions and oils on class day; slippery skin makes grips harder. We practise barefoot or in grippy socks. Tie long hair back. And bring a light layer for savasana — body temperature drops fast when you go still in the air.",
+          "Skip heavy lotions and oils on class day; slippery skin makes grips harder. We practice barefoot or in grippy socks. Tie long hair back. And bring a light layer for savasana — body temperature drops fast when you go still in the air.",
         ],
       },
     ],
@@ -119,7 +119,7 @@ export const posts: Post[] = [
     body: [
       {
         paragraphs: [
-          "Ask anyone who practises aerial regularly what keeps them coming back and, sooner or later, they'll say something like 'I just feel taller afterward.' They're not imagining it. Inverting in a supportive hammock does measurable, lovely things to the body. Let's unpack a few.",
+          "Ask anyone who practices aerial regularly what keeps them coming back and, sooner or later, they'll say something like 'I just feel taller afterward.' They're not imagining it. Inverting in a supportive hammock does measurable, lovely things to the body. Let's unpack a few.",
         ],
       },
       {
@@ -181,7 +181,7 @@ export const posts: Post[] = [
       {
         heading: "Months 4–9: Strength and flow",
         paragraphs: [
-          "With a solid base, you branch into Flow and Strength. You can invert without thinking, hold shapes longer, and string together sequences. Many flyers feel their first real 'I'm actually good at this' moment somewhere in here. It's a great feeling — savour it.",
+          "With a solid base, you branch into Flow and Strength. You can invert without thinking, hold shapes longer, and string together sequences. Many flyers feel their first real 'I'm actually good at this' moment somewhere in here. It's a great feeling — savor it.",
         ],
       },
       {

@@ -31,11 +31,16 @@ export default function FAQ() {
       />
 
       <section className="container-page py-12 sm:py-16">
-        <div className="mb-10 flex flex-wrap gap-2">
+        <div
+          role="group"
+          aria-label="Filter questions by category"
+          className="mb-10 flex flex-wrap gap-2"
+        >
           {tabs.map((t) => (
             <button
               key={t}
               type="button"
+              aria-pressed={active === t}
               onClick={() => setActive(t)}
               className={`rounded-full px-4 py-2 text-sm font-medium transition-all ${
                 active === t
@@ -48,6 +53,7 @@ export default function FAQ() {
           ))}
         </div>
 
+        <h2 className="sr-only">Frequently asked questions</h2>
         <div className="mx-auto max-w-3xl space-y-3">
           {visible.map((f) => (
             <FAQItem key={f.question} faq={f} />

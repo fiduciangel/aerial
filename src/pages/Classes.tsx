@@ -37,11 +37,16 @@ export default function Classes() {
       />
 
       <section className="container-page py-12 sm:py-16">
-        <div className="mb-10 flex flex-wrap gap-2">
+        <div
+          role="group"
+          aria-label="Filter classes by level"
+          className="mb-10 flex flex-wrap gap-2"
+        >
           {filters.map((f) => (
             <button
               key={f}
               type="button"
+              aria-pressed={filter === f}
               onClick={() => setFilter(f)}
               className={`rounded-full px-4 py-2 text-sm font-medium transition-all ${
                 filter === f

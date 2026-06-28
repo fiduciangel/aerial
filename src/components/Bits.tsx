@@ -1,13 +1,13 @@
-import type { ReactNode } from "react";
 import { Star } from "lucide-react";
 import type { Level } from "../data/classes";
 
+// All badges use dark plum-deep text on a light tint for reliable contrast.
 const levelStyles: Record<Level, string> = {
-  Beginner: "bg-sage-soft/60 text-plum-deep",
-  "All Levels": "bg-blush/70 text-plum-deep",
-  Intermediate: "bg-clay-soft/60 text-clay-deep",
+  Beginner: "bg-sage-soft/70 text-plum-deep",
+  "All Levels": "bg-blush/80 text-plum-deep",
+  Intermediate: "bg-clay-soft/80 text-plum-deep",
   Advanced: "bg-plum/15 text-plum-deep",
-  Kids: "bg-gold/30 text-clay-deep",
+  Kids: "bg-gold/40 text-plum-deep",
 };
 
 export function LevelBadge({ level }: { level: Level }) {
@@ -20,30 +20,17 @@ export function LevelBadge({ level }: { level: Level }) {
   );
 }
 
-export function Pill({
-  children,
-  className = "",
-}: {
-  children: ReactNode;
-  className?: string;
-}) {
-  return (
-    <span
-      className={`inline-flex items-center gap-1.5 rounded-full bg-white/70 px-3 py-1 text-xs font-medium text-ink-soft ${className}`}
-    >
-      {children}
-    </span>
-  );
-}
-
-/** Five-dot intensity meter, 1–5. */
+/** Five-dot intensity meter, 1–5. Use tone="light" on dark backgrounds. */
 export function IntensityMeter({
   value,
   label = true,
+  tone = "dark",
 }: {
   value: number;
   label?: boolean;
+  tone?: "dark" | "light";
 }) {
+  const light = tone === "light";
   return (
     <span className="inline-flex items-center gap-2" title={`Intensity ${value} of 5`}>
       <span className="flex gap-1" aria-hidden="true">
@@ -51,13 +38,21 @@ export function IntensityMeter({
           <span
             key={i}
             className={`h-1.5 w-4 rounded-full transition-colors ${
-              i < value ? "bg-clay" : "bg-plum/15"
+              i < value
+                ? light
+                  ? "bg-clay-soft"
+                  : "bg-clay"
+                : light
+                  ? "bg-linen/30"
+                  : "bg-plum/15"
             }`}
           />
         ))}
       </span>
       {label && (
-        <span className="text-xs font-medium text-ink-soft">
+        <span
+          className={`text-xs font-medium ${light ? "text-linen/90" : "text-ink-soft"}`}
+        >
           Intensity {value}/5
         </span>
       )}

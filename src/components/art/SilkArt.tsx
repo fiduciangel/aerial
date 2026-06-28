@@ -56,8 +56,8 @@ const GLYPHS: Record<Motif, string> = {
   // A cocoon wrap.
   cocoon:
     "M140 60 C 110 160, 110 260, 200 340 C 290 260, 290 160, 260 60 C 230 120, 170 120, 140 60 Z M200 150 C 180 200, 180 260, 200 320",
-  // Flowing fabric mid-movement.
-  flow: "M110 50 C 180 120, 120 200, 200 270 C 280 340, 220 420, 300 470 M150 60 C 210 130, 160 210, 240 280",
+  // Flowing fabric mid-movement (kept within the 0–400 viewBox).
+  flow: "M120 60 C 190 120, 120 200, 200 260 C 265 310, 225 355, 290 350 M165 65 C 220 135, 165 210, 245 275",
   // A supported split.
   split:
     "M200 40 L 200 150 M200 150 C 140 200, 110 280, 90 340 M200 150 C 260 200, 290 280, 310 340 M200 150 L 200 120",

@@ -104,7 +104,7 @@ export const instructors: Instructor[] = [
     name: "Nina Whitfield",
     role: "Kids & Beginners",
     specialties: ["Little Wings", "First Flight", "Family Aerial"],
-    bio: "Nina has the rare gift of making everyone — six or sixty — feel instantly safe upside-down. A former primary-school teacher, she runs our kids' programme and most First Flight classes, and her warmth is the reason so many nervous first-timers come back.",
+    bio: "Nina has the rare gift of making everyone — six or sixty — feel instantly safe upside-down. A former primary-school teacher, she runs our kids' program and most First Flight classes, and her warmth is the reason so many nervous first-timers come back.",
     credentials: [
       "200-hr RYT",
       "Certified Aerial Yoga Instructor",
@@ -120,6 +120,3 @@ export const instructors: Instructor[] = [
 
 export const getInstructor = (id: string) =>
   instructors.find((i) => i.id === id);
-
-export const getInstructorByName = (name: string) =>
-  instructors.find((i) => i.name === name);

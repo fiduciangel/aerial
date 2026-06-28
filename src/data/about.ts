@@ -56,12 +56,12 @@ export const about = {
     {
       year: "2019",
       title: "We grow our wings",
-      description: "A second studio room and the launch of our beginner-first First Flight programme.",
+      description: "A second studio room and the launch of our beginner-first First Flight program.",
     },
     {
       year: "2021",
       title: "Little Wings takes off",
-      description: "Our kids' programme launches — and promptly develops a waitlist.",
+      description: "Our kids' program launches — and promptly develops a waitlist.",
     },
     {
       year: "2024",

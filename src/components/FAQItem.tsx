@@ -27,6 +27,7 @@ export function FAQItem({ faq }: { faq: Faq }) {
       </h3>
       <div
         id={`faq-panel-${id}`}
+        aria-hidden={!open}
         className={`grid transition-all duration-300 ease-out ${
           open ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
         }`}

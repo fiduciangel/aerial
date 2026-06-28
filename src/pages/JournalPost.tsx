@@ -34,6 +34,8 @@ export default function JournalPost() {
       <header className={`relative overflow-hidden bg-gradient-to-br ${post.hue} pt-32 pb-16 sm:pt-36`}>
         <SilkRibbons className="absolute inset-0 h-full w-full" opacity={0.28} />
         <div className="bg-grain absolute inset-0 opacity-30" />
+        {/* Left-weighted scrim keeps text readable over any post hue. */}
+        <div className="absolute inset-0 bg-gradient-to-r from-plum-deep/85 via-plum-deep/45 to-transparent" />
         <AerialGlyph
           motif={motifFor(post.id)}
           className="absolute -right-8 top-8 hidden h-80 w-80 opacity-45 md:block"
@@ -41,17 +43,17 @@ export default function JournalPost() {
         <div className="container-page relative max-w-3xl">
           <Link
             to="/journal"
-            className="inline-flex items-center gap-2 text-sm font-medium text-plum-deep/80 transition-colors hover:text-plum-deep"
+            className="inline-flex items-center gap-2 text-sm font-medium text-linen/85 transition-colors hover:text-linen"
           >
             <ArrowLeft size={16} /> All articles
           </Link>
-          <span className="mt-6 inline-block rounded-full bg-white/70 px-3 py-1 text-xs font-semibold text-plum-deep">
+          <span className="mt-6 inline-block rounded-full bg-white/85 px-3 py-1 text-xs font-semibold text-plum-deep">
             {post.category}
           </span>
-          <h1 className="mt-4 font-display text-4xl leading-tight text-plum-deep sm:text-5xl">
+          <h1 className="mt-4 font-display text-4xl leading-tight text-linen sm:text-5xl">
             {post.title}
           </h1>
-          <div className="mt-5 flex items-center gap-4 text-sm text-plum-deep/80">
+          <div className="mt-5 flex items-center gap-4 text-sm text-linen/85">
             <span>{formatDate(post.date)}</span>
             <span className="inline-flex items-center gap-1.5">
               <Clock size={14} /> {post.readTimeMin} min read

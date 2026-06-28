@@ -60,7 +60,7 @@ export default function Instructors() {
                 <div className="space-y-4">
                   <div className="rounded-2xl bg-cream/70 p-5">
                     <h3 className="flex items-center gap-2 text-sm font-semibold text-plum">
-                      <Heart size={16} /> Favourite pose
+                      <Heart size={16} /> Favorite pose
                     </h3>
                     <p className="mt-2 text-sm text-ink-soft">{it.favoritePose}</p>
                   </div>

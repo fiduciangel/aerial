@@ -67,7 +67,7 @@ export default function About() {
         />
         <div className="mt-14 grid gap-6 sm:grid-cols-2">
           {about.values.map((v, i) => {
-            const Icon = valueIcons[i];
+            const Icon = valueIcons[i] ?? Sparkles;
             return (
               <Reveal
                 key={v.title}
@@ -127,21 +127,31 @@ export default function About() {
         <div className="relative mx-auto mt-14 max-w-3xl">
           <div className="absolute left-4 top-2 bottom-2 w-px bg-plum/15 sm:left-1/2" />
           <div className="space-y-10">
-            {about.milestones.map((m, i) => (
-              <Reveal
-                key={m.year}
-                className={`relative flex gap-6 sm:w-1/2 ${
-                  i % 2 === 1 ? "sm:ml-auto sm:flex-row" : "sm:flex-row-reverse sm:text-right"
-                }`}
-              >
-                <span className="absolute left-4 top-2 h-3 w-3 -translate-x-1/2 rounded-full bg-clay ring-4 ring-linen sm:left-auto sm:right-0 sm:translate-x-1/2" />
-                <div className={`ml-12 sm:ml-0 ${i % 2 === 1 ? "sm:pl-8" : "sm:pr-8"}`}>
-                  <span className="font-display text-2xl text-clay">{m.year}</span>
-                  <h3 className="mt-1 font-display text-xl text-ink">{m.title}</h3>
-                  <p className="mt-1 text-ink-soft">{m.description}</p>
-                </div>
-              </Reveal>
-            ))}
+            {about.milestones.map((m, i) => {
+              const left = i % 2 === 0;
+              return (
+                <Reveal
+                  key={m.year}
+                  className={`relative flex gap-6 sm:w-1/2 ${
+                    left ? "sm:flex-row-reverse sm:text-right" : "sm:ml-auto"
+                  }`}
+                >
+                  {/* Dot sits on the centre spine for both columns. */}
+                  <span
+                    className={`absolute left-4 top-2 h-3 w-3 -translate-x-1/2 rounded-full bg-clay ring-4 ring-linen ${
+                      left
+                        ? "sm:left-auto sm:right-0 sm:translate-x-1/2"
+                        : "sm:left-0 sm:right-auto sm:-translate-x-1/2"
+                    }`}
+                  />
+                  <div className={`ml-12 sm:ml-0 ${left ? "sm:pr-8" : "sm:pl-8"}`}>
+                    <span className="font-display text-2xl text-clay">{m.year}</span>
+                    <h3 className="mt-1 font-display text-xl text-ink">{m.title}</h3>
+                    <p className="mt-1 text-ink-soft">{m.description}</p>
+                  </div>
+                </Reveal>
+              );
+            })}
           </div>
         </div>
       </section>

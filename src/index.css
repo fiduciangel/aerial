@@ -25,7 +25,9 @@
 
   --color-clay: #d98e6a;
   --color-clay-soft: #e7b89c;
-  --color-clay-deep: #bf7351;
+  /* Deepened from #bf7351 so accent text (eyebrows, labels) clears WCAG AA
+     contrast on the light linen/blush backgrounds. */
+  --color-clay-deep: #a0522d;
 
   --color-sage: #9db29a;
   --color-sage-soft: #c5d3c2;
@@ -128,7 +130,7 @@
     border-radius: 4px;
   }
 
-  /* Honour reduced-motion preferences for all decorative motion. */
+  /* Honor reduced-motion preferences for all decorative motion. */
   @media (prefers-reduced-motion: reduce) {
     html {
       scroll-behavior: auto;

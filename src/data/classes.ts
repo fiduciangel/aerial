@@ -191,9 +191,9 @@ export const classes: AerialClass[] = [
     summary:
       "Imagination, climbing, and giggles — aerial movement built for growing bodies.",
     description:
-      "Little Wings turns the studio into a playground. Through games, story-led sequences, and plenty of safe climbing and spinning, kids build coordination, confidence, and strength without ever realising it's exercise. Small groups, big smiles.",
+      "Little Wings turns the studio into a playground. Through games, story-led sequences, and plenty of safe climbing and spinning, kids build coordination, confidence, and strength without ever realizing it's exercise. Small groups, big smiles.",
     whatToExpect:
-      "Energetic warm-up games, guided climbs and wraps, a creative challenge, and a cosy cocoon rest to finish.",
+      "Energetic warm-up games, guided climbs and wraps, a creative challenge, and a cozy cocoon rest to finish.",
     benefits: [
       "Build coordination & confidence",
       "Burn energy, safely",

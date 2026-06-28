@@ -8,7 +8,7 @@ export function PricingCard({ plan }: { plan: Plan }) {
     <div
       className={`relative flex flex-col rounded-3xl border p-7 transition-all duration-300 hover:-translate-y-1 ${
         highlighted
-          ? "border-transparent bg-gradient-to-br from-plum to-plum-deep text-linen shadow-lift"
+          ? "border-transparent bg-gradient-to-br from-plum to-plum-deep text-linen shadow-lift hover:shadow-[0_42px_75px_-28px_rgba(63,51,84,0.75)]"
           : "border-plum/12 bg-white/70 text-ink shadow-soft hover:shadow-lift"
       }`}
     >

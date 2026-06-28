@@ -106,14 +106,19 @@ export function Footer() {
           © {new Date().getFullYear()} {site.fullName}. Crafted with care in{" "}
           {site.location.city}.
         </p>
-        <p className="flex gap-4">
+        <p className="flex flex-wrap gap-4">
           <Link to="/faq" className="hover:text-clay-soft">
             FAQ
           </Link>
           <Link to="/contact" className="hover:text-clay-soft">
             Contact
           </Link>
-          <span className="text-linen/40">Privacy · Terms</span>
+          <Link to="/privacy" className="hover:text-clay-soft">
+            Privacy
+          </Link>
+          <Link to="/terms" className="hover:text-clay-soft">
+            Terms
+          </Link>
         </p>
       </div>
     </footer>
