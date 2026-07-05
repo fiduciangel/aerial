@@ -33,9 +33,9 @@ export function Filters({
   onReset,
 }: FiltersProps) {
   return (
-    <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm sm:p-5">
+    <div className="rounded-2xl border border-stone-200 bg-white p-4 shadow-sm sm:p-5">
       <div className="flex items-center justify-between">
-        <h2 className="text-sm font-bold text-slate-900">篩選條件</h2>
+        <h2 className="text-sm font-bold text-stone-900">篩選條件</h2>
         <button
           type="button"
           onClick={onReset}
@@ -47,7 +47,7 @@ export function Filters({
 
       {/* 城市 */}
       <fieldset className="mt-4">
-        <legend className="mb-1.5 text-xs font-semibold text-slate-500">城市</legend>
+        <legend className="mb-1.5 text-xs font-semibold text-stone-500">城市</legend>
         <div className="flex flex-wrap gap-1.5">
           {(["全部", ...cities] as (City | "全部")[]).map((c) => (
             <button
@@ -58,7 +58,7 @@ export function Filters({
               className={`rounded-lg px-3 py-1.5 text-sm font-medium transition-colors ${
                 state.city === c
                   ? "bg-brand-600 text-white"
-                  : "bg-slate-100 text-slate-600 hover:bg-slate-200"
+                  : "bg-stone-100 text-stone-600 hover:bg-stone-200"
               }`}
             >
               {c}
@@ -69,7 +69,7 @@ export function Filters({
 
       {/* 項目 */}
       <fieldset className="mt-4">
-        <legend className="mb-1.5 text-xs font-semibold text-slate-500">
+        <legend className="mb-1.5 text-xs font-semibold text-stone-500">
           項目（可複選）
         </legend>
         <div className="flex flex-wrap gap-1.5">
@@ -84,7 +84,7 @@ export function Filters({
                 className={`rounded-full px-3 py-1.5 text-sm font-medium ring-1 ring-inset transition-colors ${
                   on
                     ? "bg-brand-600 text-white ring-brand-600"
-                    : "bg-white text-slate-600 ring-slate-200 hover:bg-slate-50"
+                    : "bg-white text-stone-600 ring-stone-200 hover:bg-stone-50"
                 }`}
               >
                 {d}
@@ -96,7 +96,7 @@ export function Filters({
 
       {/* 價格區間 */}
       <fieldset className="mt-4">
-        <legend className="mb-1 flex items-center justify-between text-xs font-semibold text-slate-500">
+        <legend className="mb-1 flex items-center justify-between text-xs font-semibold text-stone-500">
           <span>單堂價格上限</span>
           <span className="font-bold text-brand-700">{ntd(state.maxPrice)}</span>
         </legend>
@@ -110,7 +110,7 @@ export function Filters({
           className="w-full accent-brand-600"
           aria-label="單堂價格上限"
         />
-        <div className="flex justify-between text-[11px] text-slate-400">
+        <div className="flex justify-between text-[11px] text-stone-400">
           <span>{ntd(priceMin)}</span>
           <span>{ntd(priceMax)} 以上不限</span>
         </div>
@@ -118,11 +118,11 @@ export function Filters({
 
       {/* 捷運站 */}
       <fieldset className="mt-4">
-        <legend className="mb-1.5 text-xs font-semibold text-slate-500">捷運站 / 車站</legend>
+        <legend className="mb-1.5 text-xs font-semibold text-stone-500">捷運站 / 車站</legend>
         <select
           value={state.mrt}
           onChange={(e) => onMrt(e.target.value)}
-          className="w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-700 focus:border-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-100"
+          className="w-full rounded-lg border border-stone-200 bg-white px-3 py-2 text-sm text-stone-700 focus:border-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-100"
         >
           <option value="全部">全部車站</option>
           {mrtOptions.map((m) => (

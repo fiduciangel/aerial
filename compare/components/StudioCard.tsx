@@ -17,7 +17,7 @@ export function StudioCard({ studio, selected, disabled, onToggle }: StudioCardP
   return (
     <div
       className={`group relative flex flex-col rounded-2xl border bg-white p-5 shadow-sm transition-all hover:shadow-md ${
-        selected ? "border-brand-400 ring-1 ring-brand-300" : "border-slate-200"
+        selected ? "border-brand-400 ring-1 ring-brand-300" : "border-stone-200"
       }`}
     >
       {/* Compare toggle */}
@@ -30,8 +30,8 @@ export function StudioCard({ studio, selected, disabled, onToggle }: StudioCardP
           selected
             ? "bg-brand-600 text-white"
             : disabled
-              ? "cursor-not-allowed bg-slate-100 text-slate-300"
-              : "bg-slate-100 text-slate-600 hover:bg-brand-50 hover:text-brand-700"
+              ? "cursor-not-allowed bg-stone-100 text-stone-300"
+              : "bg-stone-100 text-stone-600 hover:bg-brand-50 hover:text-brand-700"
         }`}
       >
         {selected ? "✓ 比較中" : "＋ 比較"}
@@ -39,20 +39,20 @@ export function StudioCard({ studio, selected, disabled, onToggle }: StudioCardP
 
       <Link href={`/studios/${studio.id}`} className="flex flex-1 flex-col">
         <div className="pr-16">
-          <div className="flex items-center gap-2 text-xs text-slate-500">
-            <span className="rounded bg-slate-100 px-1.5 py-0.5 font-medium text-slate-600">
+          <div className="flex items-center gap-2 text-xs text-stone-500">
+            <span className="rounded bg-stone-100 px-1.5 py-0.5 font-medium text-stone-600">
               {studio.city}
             </span>
             <span>{studio.district}</span>
           </div>
-          <h3 className="mt-1.5 text-lg font-bold leading-snug text-slate-900 group-hover:text-brand-700">
+          <h3 className="mt-1.5 text-lg font-bold leading-snug text-stone-900 group-hover:text-brand-700">
             {studio.name}
           </h3>
         </div>
 
         <div className="mt-2 flex items-center gap-3">
           <Stars rating={studio.google_rating} />
-          <span className="inline-flex items-center gap-1 text-sm text-slate-500">
+          <span className="inline-flex items-center gap-1 text-sm text-stone-500">
             <svg viewBox="0 0 20 20" className="h-4 w-4" fill="currentColor" aria-hidden="true">
               <path
                 fillRule="evenodd"
@@ -71,17 +71,17 @@ export function StudioCard({ studio, selected, disabled, onToggle }: StudioCardP
         </div>
 
         {/* Price highlights */}
-        <dl className="mt-4 grid grid-cols-3 gap-2 rounded-xl bg-slate-50 p-3 text-center">
+        <dl className="mt-4 grid grid-cols-3 gap-2 rounded-xl bg-stone-50 p-3 text-center">
           <div>
-            <dt className="text-[11px] text-slate-500">體驗課</dt>
-            <dd className="text-sm font-bold text-slate-800">{ntd(studio.pricing.trial)}</dd>
+            <dt className="text-[11px] text-stone-500">體驗課</dt>
+            <dd className="text-sm font-bold text-stone-800">{ntd(studio.pricing.trial)}</dd>
           </div>
-          <div className="border-x border-slate-200">
-            <dt className="text-[11px] text-slate-500">單堂</dt>
-            <dd className="text-sm font-bold text-slate-800">{ntd(studio.pricing.single)}</dd>
+          <div className="border-x border-stone-200">
+            <dt className="text-[11px] text-stone-500">單堂</dt>
+            <dd className="text-sm font-bold text-stone-800">{ntd(studio.pricing.single)}</dd>
           </div>
           <div>
-            <dt className="text-[11px] text-slate-500">每堂最低</dt>
+            <dt className="text-[11px] text-stone-500">每堂最低</dt>
             <dd className="text-sm font-bold text-brand-700">{ntd(perSession)}</dd>
           </div>
         </dl>
@@ -91,8 +91,8 @@ export function StudioCard({ studio, selected, disabled, onToggle }: StudioCardP
             <LevelTag key={l} value={l} />
           ))}
           {studio.pricing.monthly != null && (
-            <span className="ml-auto text-xs text-slate-500">
-              月費 <span className="font-semibold text-slate-700">{ntd(studio.pricing.monthly)}</span>
+            <span className="ml-auto text-xs text-stone-500">
+              月費 <span className="font-semibold text-stone-700">{ntd(studio.pricing.monthly)}</span>
             </span>
           )}
         </div>

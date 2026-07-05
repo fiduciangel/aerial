@@ -27,9 +27,9 @@ export function CompareView() {
 
   if (studios.length === 0) {
     return (
-      <div className="rounded-2xl border border-dashed border-slate-300 bg-white p-10 text-center">
-        <p className="font-medium text-slate-700">還沒有選擇要比較的教室</p>
-        <p className="mt-1 text-sm text-slate-500">
+      <div className="rounded-2xl border border-dashed border-stone-300 bg-white p-10 text-center">
+        <p className="font-medium text-stone-700">還沒有選擇要比較的教室</p>
+        <p className="mt-1 text-sm text-stone-500">
           回到教室列表,勾選 2–3 間教室的「＋ 比較」再回來。
         </p>
         <Link
@@ -58,27 +58,27 @@ export function CompareView() {
       <table className="w-full min-w-[560px] border-separate border-spacing-0">
         <thead>
           <tr>
-            <th className="sticky left-0 z-10 w-28 bg-slate-50 p-3 text-left align-bottom text-xs font-semibold text-slate-400">
+            <th className="sticky left-0 z-10 w-28 bg-stone-50 p-3 text-left align-bottom text-xs font-semibold text-stone-400">
               比較項目
             </th>
             {studios.map((s) => (
               <th
                 key={s.id}
-                className="min-w-[160px] border-b border-slate-200 p-3 text-left align-top"
+                className="min-w-[160px] border-b border-stone-200 p-3 text-left align-top"
               >
                 <div className="flex items-start justify-between gap-2">
-                  <Link href={`/studios/${s.id}`} className="font-bold text-slate-900 hover:text-brand-700">
+                  <Link href={`/studios/${s.id}`} className="font-bold text-stone-900 hover:text-brand-700">
                     {s.name}
                   </Link>
                   <Link
                     href={removeHref(s.id)}
                     aria-label={`移除 ${s.name}`}
-                    className="shrink-0 rounded-full px-1.5 text-slate-300 hover:bg-slate-100 hover:text-slate-500"
+                    className="shrink-0 rounded-full px-1.5 text-stone-300 hover:bg-stone-100 hover:text-stone-500"
                   >
                     ✕
                   </Link>
                 </div>
-                <p className="mt-0.5 text-xs font-normal text-slate-500">
+                <p className="mt-0.5 text-xs font-normal text-stone-500">
                   {s.city}
                   {s.district}
                 </p>
@@ -144,18 +144,18 @@ export function CompareView() {
             {studios.map((s) => (
               <Cell key={s.id}>
                 {s.pricing.package.length ? (
-                  <ul className="space-y-0.5 text-slate-600">
+                  <ul className="space-y-0.5 text-stone-600">
                     {s.pricing.package.map((p) => (
                       <li key={p.sessions}>
                         {p.sessions} 堂 {ntd(p.price)}
-                        <span className="text-xs text-slate-400">
+                        <span className="text-xs text-stone-400">
                           （每堂 {ntd(Math.round(p.price / p.sessions))}）
                         </span>
                       </li>
                     ))}
                   </ul>
                 ) : (
-                  <span className="text-slate-400">—</span>
+                  <span className="text-stone-400">—</span>
                 )}
               </Cell>
             ))}
@@ -171,7 +171,7 @@ function Row({ label, children }: { label: string; children: React.ReactNode }) 
     <tr>
       <th
         scope="row"
-        className="sticky left-0 z-10 bg-slate-50 p-3 text-left align-top text-xs font-semibold text-slate-500"
+        className="sticky left-0 z-10 bg-stone-50 p-3 text-left align-top text-xs font-semibold text-stone-500"
       >
         {label}
       </th>
@@ -183,14 +183,14 @@ function Row({ label, children }: { label: string; children: React.ReactNode }) 
 function Cell({ children, best }: { children: React.ReactNode; best?: boolean }) {
   return (
     <td
-      className={`border-b border-slate-100 p-3 align-top ${
-        best ? "bg-emerald-50" : ""
+      className={`border-b border-stone-100 p-3 align-top ${
+        best ? "bg-sage-50" : ""
       }`}
     >
       <div className="flex items-center gap-1.5">
         {children}
         {best && (
-          <span className="rounded bg-emerald-100 px-1.5 py-0.5 text-[10px] font-bold text-emerald-700">
+          <span className="rounded bg-sage-100 px-1.5 py-0.5 text-[10px] font-bold text-sage-700">
             最佳
           </span>
         )}
@@ -217,7 +217,7 @@ function PriceRow({
         const isBest = v != null && v === best;
         return (
           <Cell key={s.id} best={isBest}>
-            <span className={`font-semibold ${isBest ? "text-emerald-700" : "text-slate-800"}`}>
+            <span className={`font-semibold ${isBest ? "text-sage-700" : "text-stone-800"}`}>
               {ntd(v)}
             </span>
           </Cell>

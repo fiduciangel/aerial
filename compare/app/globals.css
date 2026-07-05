@@ -12,7 +12,10 @@ html {
 }
 
 body {
-  @apply bg-slate-50 text-slate-800 antialiased;
+  /* 莫蘭迪暖米白底 + 溫潤暖灰字 */
+  background-color: #f2eee8;
+  color: #4d4841;
+  -webkit-font-smoothing: antialiased;
 }
 
 @layer utilities {
