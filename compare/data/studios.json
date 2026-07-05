@@ -1,0 +1,116 @@
+[
+  {
+    "id": "soar-daan",
+    "name": "翱翔空中瑜珈 Soar Aerial",
+    "city": "台北",
+    "district": "大安區",
+    "address": "台北市大安區忠孝東路四段 45 號 6 樓",
+    "mrt_station": "忠孝復興站",
+    "disciplines": ["空中瑜珈", "空中吊床"],
+    "pricing": {
+      "trial": 500,
+      "single": 800,
+      "package": [
+        { "sessions": 10, "price": 7200 },
+        { "sessions": 20, "price": 13600 }
+      ],
+      "monthly": 3800
+    },
+    "level": ["初學", "進階"],
+    "website": "https://example.com/soar",
+    "ig": "soar.aerial",
+    "google_rating": 4.8,
+    "notes": "空間明亮、採光佳，初學者友善，教練會逐一調整動作。近忠孝復興站步行 3 分鐘。"
+  },
+  {
+    "id": "silk-zhongshan",
+    "name": "綢舞空間 Silk Loft",
+    "city": "台北",
+    "district": "中山區",
+    "address": "台北市中山區南京東路二段 100 號 3 樓",
+    "mrt_station": "松江南京站",
+    "disciplines": ["空中舞綢", "空中環"],
+    "pricing": {
+      "trial": 600,
+      "single": 900,
+      "package": [
+        { "sessions": 8, "price": 6400 },
+        { "sessions": 16, "price": 11800 }
+      ],
+      "monthly": null
+    },
+    "level": ["初學", "進階", "師資班"],
+    "website": "https://example.com/silkloft",
+    "ig": "silk.loft.tw",
+    "google_rating": 4.9,
+    "notes": "以空中舞綢與空中環表演訓練為主，挑高 5 米的場地，有開設師資培訓班。"
+  },
+  {
+    "id": "suspend-banqiao",
+    "name": "懸吊工作室 Suspend Lab",
+    "city": "新北",
+    "district": "板橋區",
+    "address": "新北市板橋區文化路一段 200 號 5 樓",
+    "mrt_station": "府中站",
+    "disciplines": ["空中瑜珈", "空中吊床", "空中舞綢"],
+    "pricing": {
+      "trial": 400,
+      "single": 700,
+      "package": [
+        { "sessions": 10, "price": 6000 },
+        { "sessions": 30, "price": 16500 }
+      ],
+      "monthly": 3200
+    },
+    "level": ["初學", "進階"],
+    "website": "https://example.com/suspend",
+    "ig": "suspend.lab",
+    "google_rating": 4.6,
+    "notes": "板橋在地小班制教室，堂數套票 CP 值高，適合想長期上課的學員。近府中站。"
+  },
+  {
+    "id": "cloud-xindian",
+    "name": "雲端空中瑜珈 Cloud Yoga",
+    "city": "新北",
+    "district": "新店區",
+    "address": "新北市新店區北新路三段 100 號 2 樓",
+    "mrt_station": "大坪林站",
+    "disciplines": ["空中瑜珈"],
+    "pricing": {
+      "trial": 300,
+      "single": 650,
+      "package": [
+        { "sessions": 12, "price": 6600 }
+      ],
+      "monthly": 2800
+    },
+    "level": ["初學"],
+    "website": "https://example.com/cloud",
+    "ig": "cloud.yoga.xd",
+    "google_rating": 4.5,
+    "notes": "主打療癒放鬆的空中瑜珈，體驗課 300 元親民，適合新手入門。大坪林站步行 5 分鐘。"
+  },
+  {
+    "id": "ring-zhongli",
+    "name": "環空間 Ring Aerial",
+    "city": "桃園",
+    "district": "中壢區",
+    "address": "桃園市中壢區中央西路二段 50 號 4 樓",
+    "mrt_station": "中壢車站",
+    "disciplines": ["空中環", "空中舞綢", "空中吊床"],
+    "pricing": {
+      "trial": 450,
+      "single": 750,
+      "package": [
+        { "sessions": 10, "price": 6800 },
+        { "sessions": 20, "price": 12800 }
+      ],
+      "monthly": 3500
+    },
+    "level": ["初學", "進階", "師資班"],
+    "website": "https://example.com/ring",
+    "ig": "ring.aerial.tw",
+    "google_rating": 4.7,
+    "notes": "桃園中壢少數同時開設空中環、舞綢與吊床的教室，鄰近中壢火車站，交通方便。"
+  }
+]

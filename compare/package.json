@@ -1,0 +1,26 @@
+{
+  "name": "aerial-compare",
+  "version": "0.1.0",
+  "private": true,
+  "description": "北部空中運動教室比較網站 — Phase 1 MVP (Next.js 14 App Router).",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "14.2.35",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "3.4.19",
+    "typescript": "^5.4.0"
+  }
+}
