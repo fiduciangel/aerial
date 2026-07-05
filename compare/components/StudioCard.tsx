@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Studio } from "@/lib/types";
 import { bestPerSession } from "@/lib/studios";
 import { ntd } from "@/lib/format";
-import { DisciplineTag, LevelTag, Stars } from "./Bits";
+import { DisciplineTag, Stars } from "./Bits";
 
 interface StudioCardProps {
   studio: Studio;
@@ -86,16 +86,12 @@ export function StudioCard({ studio, selected, disabled, onToggle }: StudioCardP
           </div>
         </dl>
 
-        <div className="mt-3 flex flex-wrap items-center gap-1.5">
-          {studio.level.map((l) => (
-            <LevelTag key={l} value={l} />
-          ))}
-          {studio.pricing.monthly != null && (
-            <span className="ml-auto text-xs text-stone-500">
-              月費 <span className="font-semibold text-stone-700">{ntd(studio.pricing.monthly)}</span>
-            </span>
-          )}
-        </div>
+        {studio.pricing.monthly != null && (
+          <div className="mt-3 text-xs text-stone-500">
+            月費吃到飽{" "}
+            <span className="font-semibold text-stone-700">{ntd(studio.pricing.monthly)}</span>
+          </div>
+        )}
 
         <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-brand-600 group-hover:gap-1.5">
           看完整資訊

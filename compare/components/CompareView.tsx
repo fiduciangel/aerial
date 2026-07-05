@@ -5,7 +5,7 @@ import { useSearchParams } from "next/navigation";
 import type { Studio } from "@/lib/types";
 import { getStudios, bestPerSession } from "@/lib/studios";
 import { ntd } from "@/lib/format";
-import { DisciplineTag, LevelTag, Stars } from "./Bits";
+import { DisciplineTag, Stars } from "./Bits";
 
 const MAX = 3;
 
@@ -107,18 +107,6 @@ export function CompareView() {
                 <div className="flex flex-wrap gap-1">
                   {s.disciplines.map((d) => (
                     <DisciplineTag key={d} value={d} />
-                  ))}
-                </div>
-              </Cell>
-            ))}
-          </Row>
-
-          <Row label="程度">
-            {studios.map((s) => (
-              <Cell key={s.id}>
-                <div className="flex flex-wrap gap-1">
-                  {s.level.map((l) => (
-                    <LevelTag key={l} value={l} />
                   ))}
                 </div>
               </Cell>

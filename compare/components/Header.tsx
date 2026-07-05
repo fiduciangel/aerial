@@ -1,9 +1,15 @@
 import Link from "next/link";
 
+const navItems = [
+  { href: "/", label: "教室列表" },
+  { href: "/disciplines", label: "項目介紹" },
+  { href: "/compare", label: "費用比較" },
+];
+
 export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-stone-200 bg-white/85 backdrop-blur">
-      <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-4 sm:px-6">
+      <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-3 sm:px-6">
         <Link href="/" className="flex items-center gap-2">
           <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand-600 text-white">
             <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" aria-hidden="true">
@@ -16,22 +22,19 @@ export function Header() {
             </svg>
           </span>
           <span className="text-base font-bold tracking-tight text-stone-900">
-            北部空中運動<span className="text-brand-600">比較</span>
+            飛比<span className="text-brand-600">空中</span>
           </span>
         </Link>
-        <nav className="flex items-center gap-1 text-sm font-medium">
-          <Link
-            href="/"
-            className="rounded-lg px-3 py-1.5 text-stone-600 transition-colors hover:bg-stone-100 hover:text-stone-900"
-          >
-            教室列表
-          </Link>
-          <Link
-            href="/compare"
-            className="rounded-lg px-3 py-1.5 text-stone-600 transition-colors hover:bg-stone-100 hover:text-stone-900"
-          >
-            費用比較
-          </Link>
+        <nav className="flex items-center gap-0.5 text-sm font-medium sm:gap-1">
+          {navItems.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="rounded-lg px-2.5 py-1.5 text-stone-600 transition-colors hover:bg-stone-100 hover:text-stone-900 sm:px-3"
+            >
+              {item.label}
+            </Link>
+          ))}
         </nav>
       </div>
     </header>

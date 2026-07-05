@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getStudio, studios } from "@/lib/studios";
 import { ntd } from "@/lib/format";
-import { DisciplineTag, LevelTag, Stars } from "@/components/Bits";
+import { DisciplineTag, Stars } from "@/components/Bits";
 
 export function generateStaticParams() {
   return studios.map((s) => ({ id: s.id }));
@@ -65,9 +65,6 @@ export default function StudioDetailPage({ params }: { params: { id: string } })
       <div className="mt-3 flex flex-wrap gap-1.5">
         {studio.disciplines.map((d) => (
           <DisciplineTag key={d} value={d} />
-        ))}
-        {studio.level.map((l) => (
-          <LevelTag key={l} value={l} />
         ))}
       </div>
 

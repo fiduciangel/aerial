@@ -1,4 +1,4 @@
-import type { Discipline, Level } from "@/lib/types";
+import type { Discipline } from "@/lib/types";
 
 // 莫蘭迪色系的項目標籤:霧玫瑰 / 灰藍 / 灰芥黃 / 灰綠。
 const disciplineStyles: Record<Discipline, string> = {
@@ -13,14 +13,6 @@ export function DisciplineTag({ value }: { value: Discipline }) {
     <span
       className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium ring-1 ring-inset ${disciplineStyles[value]}`}
     >
-      {value}
-    </span>
-  );
-}
-
-export function LevelTag({ value }: { value: Level }) {
-  return (
-    <span className="inline-flex items-center rounded-md bg-stone-100 px-2 py-0.5 text-xs font-medium text-stone-600">
       {value}
     </span>
   );
