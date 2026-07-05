@@ -97,11 +97,11 @@ export function StudioBrowser({ studios }: { studios: Studio[] }) {
       {/* Results */}
       <section>
         <div className="mb-3 flex items-center justify-between">
-          <p className="text-sm text-stone-500">
-            共 <span className="font-bold text-stone-800">{filtered.length}</span> 間教室
+          <p className="text-sm text-slate-500">
+            共 <span className="font-bold text-slate-800">{filtered.length}</span> 間教室
           </p>
           {selected.length > 0 && (
-            <p className="text-sm text-stone-500">
+            <p className="text-sm text-slate-500">
               已選 <span className="font-bold text-brand-700">{selected.length}</span>/
               {MAX_COMPARE} 間比較
             </p>
@@ -121,7 +121,7 @@ export function StudioBrowser({ studios }: { studios: Studio[] }) {
             ))}
           </div>
         ) : (
-          <div className="rounded-2xl border border-dashed border-stone-300 bg-white p-10 text-center text-stone-500">
+          <div className="rounded-2xl border border-dashed border-slate-300 bg-white p-10 text-center text-slate-500">
             <p className="font-medium">找不到符合條件的教室</p>
             <button
               type="button"
@@ -136,7 +136,7 @@ export function StudioBrowser({ studios }: { studios: Studio[] }) {
 
       {/* Sticky compare bar */}
       {selected.length > 0 && (
-        <div className="fixed inset-x-0 bottom-0 z-40 border-t border-stone-200 bg-white/95 backdrop-blur">
+        <div className="fixed inset-x-0 bottom-0 z-40 border-t border-slate-200 bg-white/95 backdrop-blur">
           <div className="mx-auto flex max-w-6xl items-center gap-3 px-4 py-3 sm:px-6">
             <div className="no-scrollbar flex flex-1 items-center gap-2 overflow-x-auto">
               {selectedStudios.map((s) => (
@@ -159,7 +159,7 @@ export function StudioBrowser({ studios }: { studios: Studio[] }) {
             <button
               type="button"
               onClick={() => setSelected([])}
-              className="shrink-0 text-sm text-stone-400 hover:text-stone-600"
+              className="shrink-0 text-sm text-slate-400 hover:text-slate-600"
             >
               清除
             </button>
@@ -171,7 +171,7 @@ export function StudioBrowser({ studios }: { studios: Studio[] }) {
                 比較費用 ({selected.length})
               </Link>
             ) : (
-              <span className="shrink-0 rounded-xl bg-stone-100 px-5 py-2.5 text-sm font-semibold text-stone-400">
+              <span className="shrink-0 rounded-xl bg-slate-100 px-5 py-2.5 text-sm font-semibold text-slate-400">
                 再選 1 間
               </span>
             )}

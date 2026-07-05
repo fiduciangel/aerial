@@ -29,7 +29,7 @@ export const disciplineInfos: DisciplineInfo[] = [
     goodFor: "想放鬆紓壓、改善姿勢,或第一次嘗試空中的人。",
     intensity: 2,
     intensityLabel: "溫和",
-    accent: { dot: "bg-dust-400", chip: "bg-dust-50 text-dust-700 ring-dust-200", bar: "bg-dust-400" },
+    accent: { dot: "bg-brand-400", chip: "bg-brand-50 text-brand-700 ring-brand-200", bar: "bg-brand-400" },
   },
   {
     name: "空中舞綢",
@@ -41,7 +41,7 @@ export const disciplineInfos: DisciplineInfo[] = [
     goodFor: "想練力量、喜歡挑戰與表演感的人。",
     intensity: 4,
     intensityLabel: "較強",
-    accent: { dot: "bg-brand-400", chip: "bg-brand-50 text-brand-700 ring-brand-200", bar: "bg-brand-400" },
+    accent: { dot: "bg-rose-400", chip: "bg-rose-50 text-rose-700 ring-rose-200", bar: "bg-rose-400" },
   },
   {
     name: "空中環",
