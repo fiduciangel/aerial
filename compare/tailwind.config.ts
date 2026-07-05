@@ -64,8 +64,9 @@ const config: Config = {
       },
       fontFamily: {
         sans: [
-          '"PingFang TC"',
           '"Noto Sans TC"',
+          '"Noto Sans CJK TC"',
+          '"PingFang TC"',
           '"Microsoft JhengHei"',
           "ui-sans-serif",
           "system-ui",

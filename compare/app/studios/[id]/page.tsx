@@ -44,7 +44,7 @@ export default function StudioDetailPage({ params }: { params: { id: string } })
             </span>
             <span>{studio.district}</span>
           </div>
-          <h1 className="mt-2 text-2xl font-extrabold tracking-tight text-stone-900 sm:text-3xl">
+          <h1 className="mt-2 text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl">
             {studio.name}
           </h1>
           <div className="mt-2 flex flex-wrap items-center gap-3">

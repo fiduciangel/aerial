@@ -17,7 +17,7 @@ export default function ComparePage() {
       >
         <span aria-hidden="true">←</span> 回教室列表
       </Link>
-      <h1 className="mt-4 text-2xl font-extrabold tracking-tight text-stone-900 sm:text-3xl">
+      <h1 className="mt-4 text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl">
         費用比較
       </h1>
       <p className="mt-1 text-stone-600">
