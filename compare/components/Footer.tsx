@@ -4,7 +4,7 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-4 py-8 text-sm text-slate-500 sm:px-6">
         <p className="font-medium text-slate-700">飛比空中</p>
         <p className="mt-1">
-          整理台北、新北、桃園的空中瑜珈、空中舞綢、空中環與空中吊床教室,方便你比較費用與地點。
+          整理台北、新北、桃園的空瑜、舞綢與空環教室,方便你比較費用與地點。
         </p>
         <p className="mt-3 text-xs text-slate-400">
           © {new Date().getFullYear()} 飛比空中 · Phase 1 MVP ·

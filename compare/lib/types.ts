@@ -1,6 +1,6 @@
 export type City = "台北" | "新北" | "桃園";
 
-export type Discipline = "空中瑜珈" | "空中舞綢" | "空中環" | "空中吊床";
+export type Discipline = "空瑜" | "舞綢" | "空環";
 
 export type Level = "初學" | "進階" | "師資班";
 

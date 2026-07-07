@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     template: "%s｜飛比空中",
   },
   description:
-    "飛比空中整理台北、新北、桃園的空中瑜珈、空中舞綢、空中環、空中吊床教室,提供費用、地點與捷運站的比較,幫你快速找到最適合的教室。",
+    "飛比空中整理台北、新北、桃園的空瑜、舞綢、空環教室,提供費用、地點與捷運站的比較,幫你快速找到最適合的教室。",
 };
 
 export default function RootLayout({

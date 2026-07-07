@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 import { disciplineInfos } from "@/lib/disciplines";
 
 export const metadata: Metadata = {
-  title: "認識空中運動｜什麼是空中瑜珈、舞綢、空中環",
+  title: "認識空中運動｜什麼是空瑜、舞綢、空環",
   description:
-    "空中瑜珈、空中舞綢、空中環、空中吊床有什麼不同?一次看懂四種空中運動的特色、強度與適合的人。",
+    "空瑜、舞綢、空環有什麼不同?一次看懂三種空中運動的特色、強度與適合的人。",
 };
 
 export default function DisciplinesPage() {
@@ -20,7 +20,7 @@ export default function DisciplinesPage() {
           什麼是空中運動?
         </h1>
         <p className="mt-2 max-w-2xl text-slate-600">
-          「空中運動」泛指借助懸掛道具、把身體帶離地面的運動。北部教室最常見的有以下四種
+          「空中運動」泛指借助懸掛道具、把身體帶離地面的運動。北部教室最常見的有以下三種
           —— 特色與強度各不同,先認識一下,再挑最適合你的教室。
         </p>
       </div>

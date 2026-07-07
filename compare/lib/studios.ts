@@ -13,12 +13,7 @@ export function getStudios(ids: string[]): Studio[] {
 
 export const cities: City[] = ["台北", "新北", "桃園"];
 
-export const allDisciplines: Discipline[] = [
-  "空中瑜珈",
-  "空中舞綢",
-  "空中環",
-  "空中吊床",
-];
+export const allDisciplines: Discipline[] = ["空瑜", "舞綢", "空環"];
 
 export const allLevels: Level[] = ["初學", "進階", "師資班"];
 

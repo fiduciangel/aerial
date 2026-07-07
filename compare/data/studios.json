@@ -6,7 +6,7 @@
     "district": "大安區",
     "address": "台北市大安區忠孝東路四段 45 號 6 樓",
     "mrt_station": "忠孝復興站",
-    "disciplines": ["空中瑜珈", "空中吊床"],
+    "disciplines": ["空瑜"],
     "pricing": {
       "trial": 500,
       "single": 800,
@@ -29,7 +29,7 @@
     "district": "中山區",
     "address": "台北市中山區南京東路二段 100 號 3 樓",
     "mrt_station": "松江南京站",
-    "disciplines": ["空中舞綢", "空中環"],
+    "disciplines": ["舞綢", "空環"],
     "pricing": {
       "trial": 600,
       "single": 900,
@@ -43,7 +43,7 @@
     "website": "https://example.com/silkloft",
     "ig": "silk.loft.tw",
     "google_rating": 4.9,
-    "notes": "以空中舞綢與空中環表演訓練為主，挑高 5 米的場地，有開設師資培訓班。"
+    "notes": "以舞綢與空環表演訓練為主，挑高 5 米的場地，有開設師資培訓班。"
   },
   {
     "id": "suspend-banqiao",
@@ -52,7 +52,7 @@
     "district": "板橋區",
     "address": "新北市板橋區文化路一段 200 號 5 樓",
     "mrt_station": "府中站",
-    "disciplines": ["空中瑜珈", "空中吊床", "空中舞綢"],
+    "disciplines": ["空瑜", "舞綢"],
     "pricing": {
       "trial": 400,
       "single": 700,
@@ -75,7 +75,7 @@
     "district": "新店區",
     "address": "新北市新店區北新路三段 100 號 2 樓",
     "mrt_station": "大坪林站",
-    "disciplines": ["空中瑜珈"],
+    "disciplines": ["空瑜"],
     "pricing": {
       "trial": 300,
       "single": 650,
@@ -88,7 +88,7 @@
     "website": "https://example.com/cloud",
     "ig": "cloud.yoga.xd",
     "google_rating": 4.5,
-    "notes": "主打療癒放鬆的空中瑜珈，體驗課 300 元親民，適合新手入門。大坪林站步行 5 分鐘。"
+    "notes": "主打療癒放鬆的空瑜,體驗課 300 元親民,適合新手入門。大坪林站步行 5 分鐘。"
   },
   {
     "id": "ring-zhongli",
@@ -97,7 +97,7 @@
     "district": "中壢區",
     "address": "桃園市中壢區中央西路二段 50 號 4 樓",
     "mrt_station": "中壢車站",
-    "disciplines": ["空中環", "空中舞綢", "空中吊床"],
+    "disciplines": ["空環", "舞綢"],
     "pricing": {
       "trial": 450,
       "single": 750,
@@ -111,6 +111,6 @@
     "website": "https://example.com/ring",
     "ig": "ring.aerial.tw",
     "google_rating": 4.7,
-    "notes": "桃園中壢少數同時開設空中環、舞綢與吊床的教室，鄰近中壢火車站，交通方便。"
+    "notes": "桃園中壢少數同時開設空環與舞綢的教室,鄰近中壢火車站,交通方便。"
   }
 ]

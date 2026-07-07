@@ -1,11 +1,10 @@
 import type { Discipline } from "@/lib/types";
 
-// 霧藍天空色系的項目標籤:天空藍 / 淡玫瑰 / 灰芥黃 / 灰綠。
+// 霧藍天空色系的項目標籤:天空藍 / 淡玫瑰 / 灰芥黃。
 const disciplineStyles: Record<Discipline, string> = {
-  空中瑜珈: "bg-brand-50 text-brand-700 ring-brand-200",
-  空中舞綢: "bg-rose-50 text-rose-700 ring-rose-200",
-  空中環: "bg-ochre-50 text-ochre-700 ring-ochre-200",
-  空中吊床: "bg-sage-50 text-sage-700 ring-sage-200",
+  空瑜: "bg-brand-50 text-brand-700 ring-brand-200",
+  舞綢: "bg-rose-50 text-rose-700 ring-rose-200",
+  空環: "bg-ochre-50 text-ochre-700 ring-ochre-200",
 };
 
 export function DisciplineTag({ value }: { value: Discipline }) {
