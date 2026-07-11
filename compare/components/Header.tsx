@@ -22,8 +22,8 @@ export function Header() {
             </svg>
           </span>
           <span className="flex flex-col leading-none">
-            <span className="text-base font-bold tracking-tight text-slate-900">
-              空中<span className="text-brand-600">圖鑑</span>
+            <span className="text-lg font-bold lowercase tracking-tight text-slate-900">
+              air<span className="text-brand-600">soul</span>
             </span>
             <span className="mt-0.5 hidden text-[10px] font-medium tracking-wide text-slate-400 sm:block">
               台北・新北・桃園 空中教室指南
