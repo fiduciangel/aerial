@@ -5,11 +5,11 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "飛比空中｜台北・新北・桃園 空中運動教室比較",
-    template: "%s｜飛比空中",
+    default: "空中圖鑑｜台北・新北・桃園 空中教室指南",
+    template: "%s｜空中圖鑑",
   },
   description:
-    "飛比空中整理台北、新北、桃園的空瑜、舞綢、空環教室,提供費用、地點與捷運站的比較,幫你快速找到最適合的教室。",
+    "空中圖鑑整理台北、新北、桃園的空瑜、舞綢、空環教室,提供費用、地點與捷運站的比較,幫你快速找到最適合的教室。金額以新台幣計價,僅供參考。",
 };
 
 export default function RootLayout({

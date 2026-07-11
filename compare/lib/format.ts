@@ -1,5 +1,5 @@
-/** 格式化台幣金額，例如 800 → "NT$800"；null → "—"。 */
+/** 格式化金額（新台幣），例如 800 → "$800"；null → "—"。 */
 export function ntd(value: number | null | undefined): string {
   if (value == null) return "—";
-  return `NT$${value.toLocaleString("zh-Hant")}`;
+  return `$${value.toLocaleString("zh-Hant")}`;
 }

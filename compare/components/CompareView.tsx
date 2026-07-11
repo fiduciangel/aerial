@@ -128,7 +128,7 @@ export function CompareView() {
             best={bestMonthly}
           />
 
-          <Row label="堂數套票">
+          <Row label="套票方案">
             {studios.map((s) => (
               <Cell key={s.id}>
                 {s.pricing.package.length ? (

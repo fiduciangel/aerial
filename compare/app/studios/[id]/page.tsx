@@ -89,7 +89,7 @@ export default function StudioDetailPage({ params }: { params: { id: string } })
                 <table className="w-full text-sm">
                   <thead className="bg-slate-50 text-left text-xs text-slate-500">
                     <tr>
-                      <th className="px-4 py-2 font-semibold">堂數套票</th>
+                      <th className="px-4 py-2 font-semibold">套票方案</th>
                       <th className="px-4 py-2 font-semibold">總價</th>
                       <th className="px-4 py-2 text-right font-semibold">每堂平均</th>
                     </tr>
@@ -118,14 +118,6 @@ export default function StudioDetailPage({ params }: { params: { id: string } })
           </section>
 
           <section className="flex flex-wrap gap-3">
-            <a
-              href={studio.website}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
-            >
-              官方網站 ↗
-            </a>
             <a
               href={`https://instagram.com/${studio.ig}`}
               target="_blank"

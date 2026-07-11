@@ -70,7 +70,7 @@ export function Filters({
       {/* 項目 */}
       <fieldset className="mt-4">
         <legend className="mb-1.5 text-xs font-semibold text-slate-500">
-          項目（可複選）
+          運動類型（可複選）
         </legend>
         <div className="flex flex-wrap gap-1.5">
           {allDisciplines.map((d) => {
@@ -114,6 +114,9 @@ export function Filters({
           <span>{ntd(priceMin)}</span>
           <span>{ntd(priceMax)} 以上不限</span>
         </div>
+        <p className="mt-1.5 text-[10px] text-slate-400">
+          金額以新台幣（$）計價，僅供參考
+        </p>
       </fieldset>
 
       {/* 捷運站 */}

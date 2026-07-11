@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const navItems = [
   { href: "/", label: "教室列表" },
-  { href: "/disciplines", label: "項目介紹" },
+  { href: "/disciplines", label: "運動類型" },
   { href: "/compare", label: "費用比較" },
 ];
 
@@ -21,8 +21,13 @@ export function Header() {
               />
             </svg>
           </span>
-          <span className="text-base font-bold tracking-tight text-slate-900">
-            飛比<span className="text-brand-600">空中</span>
+          <span className="flex flex-col leading-none">
+            <span className="text-base font-bold tracking-tight text-slate-900">
+              空中<span className="text-brand-600">圖鑑</span>
+            </span>
+            <span className="mt-0.5 hidden text-[10px] font-medium tracking-wide text-slate-400 sm:block">
+              台北・新北・桃園 空中教室指南
+            </span>
           </span>
         </Link>
         <nav className="flex items-center gap-0.5 text-sm font-medium sm:gap-1">
