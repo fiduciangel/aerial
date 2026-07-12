@@ -5,11 +5,11 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "airsoul｜台北・新北・桃園 空中教室指南",
+    default: "airsoul｜找到你的空中",
     template: "%s｜airsoul",
   },
   description:
-    "airsoul 整理台北、新北、桃園的空瑜、舞綢、空環教室,提供費用、地點與捷運站的比較,幫你快速找到最適合的教室。金額以新台幣計價,僅供參考。",
+    "airsoul —幫你找到最適合的空中運動教室,比較費用、地點與捷運站。現正收錄台北、新北、桃園,持續擴展中。金額以新台幣計價,僅供參考。",
 };
 
 export default function RootLayout({
