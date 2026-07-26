@@ -4,7 +4,7 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-4 py-8 text-sm text-slate-500 sm:px-6">
         <p className="font-medium lowercase text-slate-700">airsoul</p>
         <p className="mt-1 text-slate-500">
-          找到你的空中 · <span className="text-slate-400">find your air</span>
+          讓靈魂在空中飛舞 · <span className="text-slate-400">let your soul take flight</span>
         </p>
         <p className="mt-3 text-xs text-slate-400">
           所有金額以新台幣（$，TWD）計價,資料僅供參考;實際費用與課程請以各教室官方公告為準。

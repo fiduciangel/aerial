@@ -5,7 +5,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "airsoul｜找到你的空中",
+    default: "airsoul｜讓靈魂在空中飛舞",
     template: "%s｜airsoul",
   },
   description:

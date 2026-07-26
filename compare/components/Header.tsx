@@ -26,7 +26,7 @@ export function Header() {
               air<span className="text-brand-600">soul</span>
             </span>
             <span className="mt-0.5 hidden text-[10px] font-medium tracking-wide text-slate-400 sm:block">
-              找到你的空中
+              讓靈魂在空中飛舞
             </span>
           </span>
         </Link>
