@@ -3,6 +3,7 @@ import Link from "next/link";
 const navItems = [
   { href: "/", label: "教室列表" },
   { href: "/disciplines", label: "運動類型" },
+  { href: "/guide", label: "新手須知" },
   { href: "/compare", label: "費用比較" },
 ];
 
